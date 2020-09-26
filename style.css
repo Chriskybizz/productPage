@@ -4,10 +4,43 @@ body {
     ;
 }
 
+#submit {
+
+    width: 20vw;
+    height: 3vh;
+    background-color: cadetblue;
+    border-color: transparent;
+}
+
+#submit:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes background-color {
+    100% {
+      background-color: #4791d0;
+    }
+  }
+
+#email {
+    width: 20vw;
+    height: 3vh;
+}
+  
+
+
+#scroll {
+    overflow-y: scroll;
+    text-align: center;
+}
+
 #topBar {
     position: fixed;
     display: grid;
     grid-template-columns: 50% 50%;
+    background-color: #F9F9F9;
 }
 
 #image {
@@ -24,8 +57,7 @@ body {
 }
 
 #registerBar {
-
-    margin: 20vh;
+    margin: 10vh;
     display: grid;
     grid-template-rows: 5vh 5vh;
     justify-items: center;
@@ -34,33 +66,62 @@ body {
 
 #promoInfo {
     display: grid;
+    justify-items: center;
+    margin-top: 0%;
+    gap: 3vh;
+    grid-template-rows: 7vw 7vw 7vw;
+
+
+
 }
 
 .promo {
     display: grid;
-    grid-template-columns: 50px 50vw;
+    width: 50%;
+    grid-template-columns: 20% 80%;
+    justify-items: left;
+
 }
 
+.promoText {
+    font-size: 20px;
+    text-align: left;
+
+
+}
 .img {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+   
+    
+ 
 }
 
 #productInfo {
+
     display: grid;
-    grid-template-columns: 33vw 33vw 33vw;
+    
+    grid-template-columns: 12vw 12vw 12vw;
 }
 
 .product {
+
     border: 3px black solid;
     justify-self: center;
     height: 20vh;
     width: 15vh;
+
 }
 
-#footInfo {}
 
 a {
     text-decoration: none;
     color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+#video{
+    margin: 50px;
 }
