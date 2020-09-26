@@ -1,0 +1,60 @@
+#topBar {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#image {
+    background-color: lightcoral;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+#topBarLinks {
+    display: grid;
+    background-color: lightgreen;
+    letter-spacing: 10px;
+    grid-template-columns: 20vw 20vw 20vw;
+}
+
+
+
+#registerBar {
+    display: grid;
+    background-color: lightcyan;
+    grid-template-rows: 5vh 5vh;
+}
+
+#promoInfo {
+    display: grid;
+    background-color: lightgoldenrodyellow;
+}
+
+.promo{
+    display: grid;
+    grid-template-columns: 50px 50vw;
+}
+
+.img{
+    height: 50px;
+    width: 50px;
+}
+
+#productInfo {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    background-color: lightgray;
+}
+
+.product{
+    border: 3px black solid;
+    justify-self: center;
+    height: 20vh;
+    width: 15vh;
+}
+
+#footInfo {
+    background-color: lightgreen;
+}
+
