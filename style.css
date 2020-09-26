@@ -4,7 +4,7 @@ body {
     ;
 }
 
-#submit {
+.submit {
 
     width: 20vw;
     height: 3vh;
@@ -12,7 +12,8 @@ body {
     border-color: transparent;
 }
 
-#submit:hover {
+.submit:hover {
+    cursor: pointer;
     animation-name: background-color;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
@@ -34,10 +35,13 @@ body {
 #scroll {
     overflow-y: scroll;
     text-align: center;
+    display: grid;
+    justify-items: center;
 }
 
 #topBar {
     position: fixed;
+    top: 0%;
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #F9F9F9;
@@ -98,19 +102,25 @@ body {
 
 #productInfo {
 
-    display: grid;
-    
-    grid-template-columns: 12vw 12vw 12vw;
+    display: grid;    
+    grid-template-columns: 20vw 20vw 20vw;
+    justify-items: center;
 }
 
 .product {
+    display: grid;
+    border: 1px black solid;
+    height: 30vh;
+    width: 20vh;
+    grid-template-rows: 20px 60px ;
+    justify-items: center;
+    }
 
-    border: 3px black solid;
-    justify-self: center;
-    height: 20vh;
-    width: 15vh;
-
+.product:hover {
+    color: red;
+    transform: scale(1.2);
 }
+
 
 
 a {
@@ -125,3 +135,37 @@ a:hover {
 #video{
     margin: 50px;
 }
+
+h4 {
+
+    margin: 10px;
+    margin-top: 30px;
+    height: 10px;
+
+}
+
+.submit2{
+    height: 20px;
+    width: 10vw;
+    background-color: cadetblue;
+    border-color: transparent;
+
+    
+}
+
+.submit2:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+
+#footInfo{
+ 
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    margin-top: 30px;
+}
+
+
+
