@@ -1,13 +1,10 @@
 body {
     background-color: #F9F9F9;
     font-family: 'Epilogue', sans-serif;
-    ;
 }
 
 .submit {
-
     width: 20vw;
-    height: 3vh;
     background-color: cadetblue;
     border-color: transparent;
 }
@@ -17,20 +14,17 @@ body {
     animation-name: background-color;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
-  }
+}
 
-  @keyframes background-color {
+@keyframes background-color {
     100% {
-      background-color: #4791d0;
+        background-color: #4791d0;
     }
-  }
+}
 
 #email_id {
     width: 20vw;
-    height: 3vh;
 }
-  
-
 
 #scroll {
     overflow-y: scroll;
@@ -59,6 +53,7 @@ body {
     letter-spacing: 6px;
     grid-template-columns: 20vw 20vw 20vw;
 }
+
 #registerBar {
     margin: 10vh;
     display: grid;
@@ -66,6 +61,7 @@ body {
     justify-items: center;
     gap: 30px;
 }
+
 #promoInfo {
     display: grid;
     justify-items: center;
@@ -73,23 +69,31 @@ body {
     gap: 3vh;
     grid-template-rows: 7vw 7vw 7vw;
 }
+
 .promo {
-    display: grid;
+    display: flex;
+    align-items: center;
     width: 50%;
-    grid-template-columns: 20% 80%;
-    justify-items: left;
 }
+
+.promo .fab {
+    font-size: 60px;
+    color: #000000;
+    padding-right: 20px;
+}
+
 .promoText {
     font-size: 20px;
     text-align: left;
 }
+
 .img {
     height: 60px;
 }
 
 #productInfo {
 
-    display: grid;    
+    display: grid;
     grid-template-columns: 20vw 20vw 20vw;
     justify-items: center;
 }
@@ -99,7 +103,7 @@ body {
     border: 1px black solid;
     height: 30vh;
     width: 20vh;
-    grid-template-rows: 20px 60px ;
+    grid-template-rows: 20px 60px;
     justify-items: center;
 }
 
@@ -107,8 +111,6 @@ body {
     color: red;
     transform: scale(1.2);
 }
-
-
 
 a {
     text-decoration: none;
@@ -136,8 +138,6 @@ h4 {
     width: 7vw;
     background-color: cadetblue;
     border-color: transparent;
-
-    
 }
 
 .submit2:hover {
@@ -145,14 +145,14 @@ h4 {
     animation-duration: 500ms;
     animation-fill-mode: forwards;
     cursor: pointer;
-  }
+}
 
 #footInfo {
- 
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw;
     margin-top: 30px;
 }
 
-
-
+#registerButton, #promoInfo {
+    margin-top: 20px;
+}
