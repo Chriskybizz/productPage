@@ -5,7 +5,6 @@ body {
 
 .submit {
     width: 20vw;
-    height: 3vh;
     background-color: cadetblue;
     border-color: transparent;
 }
@@ -25,7 +24,6 @@ body {
 
 #email_id {
     width: 20vw;
-    height: 3vh;
 }
 
 #scroll {
@@ -73,10 +71,15 @@ body {
 }
 
 .promo {
-    display: grid;
+    display: flex;
+    align-items: center;
     width: 50%;
-    grid-template-columns: 20% 80%;
-    justify-items: left;
+}
+
+.promo .fab {
+    font-size: 60px;
+    color: #000000;
+    padding-right: 20px;
 }
 
 .promoText {
@@ -148,4 +151,8 @@ h4 {
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw;
     margin-top: 30px;
+}
+
+#registerButton, #promoInfo {
+    margin-top: 20px;
 }
